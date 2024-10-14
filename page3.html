@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Plan Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .plans {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            gap: 10px;
+        }
+
+        .plan {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .plan-header {
+            background: linear-gradient(135deg, #0066FF, #7700FF);
+            color: white;
+            border-radius: 10px 10px 0 0;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        .plan-content {
+            text-align: left;
+            padding: 10px 0;
+        }
+
+        .plan-content p {
+            margin: 5px 0;
+        }
+
+        .most-popular {
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .most-popular span {
+            background-color: #6622CC;
+            color: white;
+            font-size: 12px;
+            padding: 5px;
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            border-radius: 5px;
+        }
+
+        .next-button {
+            display: inline-block;
+            background-color: red;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .terms {
+            font-size: 12px;
+            margin-top: 20px;
+            color: #777;
+        }
+
+        .terms a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="step">STEP 2 OF 3</div>
+        <h1>Choose the plan that's right for you</h1>
+
+        <div class="plans">
+            <div class="plan">
+                <div class="plan-header">Mobile<br><small>480p</small></div>
+                <div class="plan-content">
+                    <p><strong>Monthly price:</strong> ₹149</p>
+                    <p><strong>Video and sound quality:</strong> Fair</p>
+                    <p><strong>Resolution:</strong> 480p</p>
+                    <p><strong>Supported devices:</strong> Mobile phone, tablet</p>
+                    <p><strong>Devices you can watch at the same time:</strong> 1</p>
+                    <p><strong>Download devices:</strong> 1</p>
+                </div>
+            </div>
+
+            <div class="plan most-popular">
+                <span>Most Popular</span>
+                <div class="plan-header">Basic<br><small>720p</small></div>
+                <div class="plan-content">
+                    <p><strong>Monthly price:</strong> ₹199</p>
+                    <p><strong>Video and sound quality:</strong> Good</p>
+                    <p><strong>Resolution:</strong> 720p (HD)</p>
+                    <p><strong>Supported devices:</strong> TV, computer, mobile phone, tablet</p>
+                    <p><strong>Devices you can watch at the same time:</strong> 1</p>
+                    <p><strong>Download devices:</strong> 1</p>
+                </div>
+            </div>
+
+            <div class="plan">
+                <div class="plan-header">Standard<br><small>1080p</small></div>
+                <div class="plan-content">
+                    <p><strong>Monthly price:</strong> ₹499</p>
+                    <p><strong>Video and sound quality:</strong> Great</p>
+                    <p><strong>Resolution:</strong> 1080p (Full HD)</p>
+                    <p><strong>Supported devices:</strong> TV, computer, mobile phone, tablet</p>
+                    <p><strong>Devices you can watch at the same time:</strong> 2</p>
+                    <p><strong>Download devices:</strong> 2</p>
+                </div>
+            </div>
+
+            <div class="plan">
+                <div class="plan-header">Premium<br><small>4K + HDR</small></div>
+                <div class="plan-content">
+                    <p><strong>Monthly price:</strong> ₹649</p>
+                    <p><strong>Video and sound quality:</strong> Best</p>
+                    <p><strong>Resolution:</strong> 4K (Ultra HD) + HDR</p>
+                    <p><strong>Supported devices:</strong> TV, computer, mobile phone, tablet</p>
+                    <p><strong>Devices you can watch at the same time:</strong> 4</p>
+                    <p><strong>Download devices:</strong> 6</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="next-button">
+            <a href="payment.html">Next</a>
+        </button>
+
+        <div class="terms">
+            HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions. See our <a href="#">Terms of Use</a> for more details.
+        </div>
+    </div>
+
+</body>
+</html>

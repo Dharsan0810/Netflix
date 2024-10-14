@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Landing Section Styles */
+.landing {
+    background-image: url('background.jpg'); /* Background image of the first section */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.landing .content {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.landing input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Trending Section Styles */
+.trending {
+    padding: 50px;
+    background-color: black;
+    color: white;
+}
+
+.trending h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.movies {
+    display: flex;
+    justify-content: space-between;
+}
+
+.movie-card {
+    width: 15%;
+    text-align: center;
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.movie-card p {
+    background-color: red;
+    color: white;
+    padding: 5px 0;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* More reasons section */
+.more-reasons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.reason {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 24%;
+    text-align: center;
+}

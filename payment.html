@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #e50914;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .form-group label {
+            font-size: 14px;
+        }
+        .plan-box, .payment-box {
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+        .plan-box span, .payment-box span {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .plan-box .change-link, .payment-box .edit-link {
+            color: #0071eb;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .submit-button {
+            background-color: #e50914;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        .submit-button:disabled {
+            background-color: #ddd;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+        }
+        .footer a {
+            text-decoration: none;
+            color: #0071eb;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Confirm your details</h1>
+        <div class="form-group plan-box">
+            <span>₹199/month</span>
+            <span>Basic</span>
+            <a class="change-link">Change</a>
+        </div>
+        <div class="form-group payment-box">
+            <span>UPI AutoPay</span>
+            <span>d***@oksbi</span>
+            <a class="edit-link">Edit</a>
+        </div>
+        <div class="form-group">
+            <p>Any payment above ₹2000 shall need additional authentication.</p>
+            <label>
+                <input type="checkbox" id="agreeCheckbox"> I agree.
+            </label>
+        </div>
+        <button id="submitBtn" class="submit-button" disabled>Next</button>
+    </div>
+
+    <div class="footer">
+        <p>Questions? Call 000-800-919-1694</p>
+        <p><a href="#">FAQ</a> | <a href="#">Help Centre</a> | <a href="#">Terms of Use</a> | <a href="#">Privacy</a></p>
+    </div>
+
+    <script>
+        // Enable/Disable submit button based on checkbox
+        const checkbox = document.getElementById('agreeCheckbox');
+        const submitBtn = document.getElementById('submitBtn');
+
+        checkbox.addEventListener('change', function() {
+            submitBtn.disabled = !checkbox.checked;
+        });
+    </script>
+
+</body>
+</html>
